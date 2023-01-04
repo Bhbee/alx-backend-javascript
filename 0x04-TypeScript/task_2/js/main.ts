@@ -1,3 +1,4 @@
+//Task 5
 interface DirectorInterface {
   workFromHome(): string;
   getCoffeeBreak(): string;
@@ -49,6 +50,8 @@ export function createEmployee(salary: number | string): Teacher | Director {
 // console.log(createEmployee(1000));
 // console.log(createEmployee("$500"));
 
+
+//Task 6
 export function isDirector(employee: TeacherInterface | DirectorInterface): employee is Director {
   return (employee as Director).workDirectorTasks !== undefined;
 }
@@ -70,6 +73,7 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
 // executeWork(createEmployee(1000));
 
 type Subjects = "Math" | "History";
+//Task 7
 
 export function teachClass(todayClass:Subjects): string {
   if (todayClass === "Math") {

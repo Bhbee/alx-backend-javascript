@@ -1,3 +1,4 @@
+//Task 1
 interface Teacher {
   readonly firstName: string;
   readonly lastName: string;
@@ -19,6 +20,7 @@ interface Teacher {
 
 // console.log(teacher3);
 
+//Task2
 interface Directors extends Teacher {
   numberOfReports: number;
 }
@@ -32,6 +34,7 @@ interface Directors extends Teacher {
 // };
 // console.log(director1);
 
+//Task 3
 /* eslint-disable @typescript-eslint/class-name-casing */
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
@@ -47,6 +50,7 @@ export const printTeacher: printTeacherFunction = function (
 
 // console.log(printTeacher("John", "Doe"));
 
+//Task 4
 interface StudentConstructor {
   new (firstName: string, lastName: string): StudentClassInterface;
 }
